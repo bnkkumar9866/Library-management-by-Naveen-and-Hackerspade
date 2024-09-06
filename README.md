@@ -1,2 +1,11 @@
-# Library-management-by-Naveen-and-Hackerspade
-management of library include E-library
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>redirect</title>
+  </head>
+  <body>
+    <h1>clic here to go.</h1>
+    <a html/gpthomepage.html">me</a>
+  </body>
+</html>
+
