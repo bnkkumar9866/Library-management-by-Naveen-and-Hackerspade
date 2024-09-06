@@ -1,0 +1,145 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Section Heading */
+h2.display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-light, .btn-primary, .btn-secondary, .btn-success {
+    font-size: 1.1rem;
+}
+
+/* Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Links */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 15px;
+   
+  }
+  .login,.signup{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home{
+    height: 100%;
+  }
+  .lead{
+    text-align: left;
+  }
+  #homeimg{
+    display: inline-block ;
+    
+    width: 20cm;
+    height: fit-content;
+    position: relative;
+  }
+  #te{
+    text-align: left;
+  }
+  #contact_img{
+    width: 20cm;
+    height: auto;
+  }
+  .homeaxi{
+    float: right;
+    width: 5cm;
+    height:auto;
+    size: 10cm;
+  }
+  pagebo{
+    display: flex;
+    content: normal;
+  }
+  /* General body styling to ensure no default margins/padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.logo-img {
+  width: 80px; /* Adjust logo size if necessary */
+}
+
+/* Sign Up Card */
+.sign-up-card {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-img {
+      width: 60px;
+  }
+
+  .sign-up-card {
+      padding: 1rem;
+  }
+}
+#box{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

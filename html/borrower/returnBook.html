@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Issued Books</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            background-color: #007bff;
+            padding: 15px 10px;
+            height: 75px;
+        }
+
+        .navbar-brand img {
+            width: 65px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Card container */
+        .card-container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border: none;
+            font-size: 18px;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .due-date {
+            font-size: 16px;
+            color: #ff0000;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="borrowerOptions.html">
+            <img src="../../assets/books.jpeg" alt="Library Logo">
+        </a>
+        <a href="../homepage.html" class="logout-btn btn btn-danger">Logout</a>
+    </nav>
+
+    <!-- Issued Books Container -->
+    <div class="card-container">
+        <h2 class="text-center mb-4">Issued Books</h2>
+        <div class="row">
+            <!-- Issued Book Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../assets/paper1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Fundamentals and Programming in C | 3rd Edition</h5>
+                        <p class="card-text">Author: Reema Thareja</p>
+                        <p class="card-text">Genre: Programming Language</p>
+                        <p class="card-text">Issued Date: 10 Aug 2024</p>
+                        <p class="card-text due-date">Due Date: 10 Sept 2024</p>
+                        <button class="btn btn-danger">Return Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Issued Book Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../assets/paper2.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cracking the Coding Interview</h5>
+                        <p class="card-text">Author: Gayle Laakmann McDowell</p>
+                        <p class="card-text">Genre: Programming</p>
+                        <p class="card-text">Issued Date: 15 Aug 2024</p>
+                        <p class="card-text due-date">Due Date: 15 Sept 2024</p>
+                        <button class="btn btn-danger">Return Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Issued Book Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../assets/paper3.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Programmer's Toolkit</h5>
+                        <p class="card-text">Author: Mark Reed</p>
+                        <p class="card-text">Genre: Programming</p>
+                        <p class="card-text">Issued Date: 20 Aug 2024</p>
+                        <p class="card-text due-date">Due Date: 20 Sept 2024</p>
+                        <button class="btn btn-danger">Return Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more issued book cards as needed -->
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- Custom JS for Return Book Alert -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.btn-danger').forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Return Successful');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

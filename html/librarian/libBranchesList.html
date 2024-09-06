@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library Branches List</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+    /* Top Navigation Bar */
+    .navBar {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navBar .logo img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    /* Main Container */
+    .table_container {
+      padding: 80px 20px; /* Adding padding to compensate for the fixed navbar */
+    }
+
+    h2 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Table Styling */
+    table {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    .table_buttons a {
+      margin: 0 5px;
+      color: #007bff;
+    }
+
+    .table_buttons a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="navBar">
+    <div class="logo">
+      <a href="#">
+        <img src="../../assets/books.jpeg" alt="Book Logo">
+      </a>
+    </div>
+    <a href="../homepage.html" class="logout-btn btn btn-danger">Logout</a>
+  </div>
+
+  <!-- Main Container -->
+  <div class="table_container container">
+    <h2>Library Branches List</h2>
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Branch Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Madison</td>
+            <td>Fake Branch0 Land</td>
+            <td class="table_buttons">
+              <a class="edit" href="editLibraryBranch.html" title="Edit Branch Info" data-toggle="tooltip">
+                <i class="material-icons">edit</i>
+              </a>
+              <a class="edit_books" href="editbookCopies.html" title="Edit number of book copies" data-toggle="tooltip">
+                <i class="material-icons">library_books</i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>James</td>
+            <td>Fake Branch1 Land</td>
+            <td class="table_buttons">
+              <a class="edit" href="editLibraryBranch.html" title="Edit Branch Info" data-toggle="tooltip">
+                <i class="material-icons">edit</i>
+              </a>
+              <a class="edit_books" href="editbookCopies.html" title="Edit number of book copies" data-toggle="tooltip">
+                <i class="material-icons">library_books</i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Sharpstown</td>
+            <td>Fake Branch2 Land</td>
+            <td class="table_buttons"> 
+              <a class="edit" href="editLibraryBranch.html" title="Edit Branch Info" data-toggle="tooltip">
+                <i class="material-icons">edit</i>
+              </a>
+              <a class="edit_books" href="editbookCopies.html" title="Edit number of book copies" data-toggle="tooltip">
+                <i class="material-icons">library_books</i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

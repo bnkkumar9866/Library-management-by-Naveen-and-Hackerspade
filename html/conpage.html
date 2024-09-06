@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/chathome.css">
+    <style>
+        /* Overall page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-height container with background image */
+.bg-cover {
+    background: url('https://via.placeholder.com/1920x1080?text=Library+Background') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Centering and styling header title */
+.header-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Card styling */
+.option-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.option-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.option-card .card-body {
+    text-align: center;
+    padding: 2rem;
+}
+
+.option-card .btn {
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+}
+.logtit{
+    color: aqua;
+}
+.messeage{
+    text-align: center;
+    padding: 20px;
+}
+/* Centering content horizontally */
+
+
+    </style> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-2.5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="logo">
+                <a href="gpthomepage.html">
+                  <img src="../assets/books.jpeg" alt="book">
+                </a>
+              </div>
+            <div class="container">
+                <a class="navbar-brand" href="#">Library Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="gpthomepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <div class="signup"><a href="../html/newsignup.html"><button type="button" class="btn btn-outline-info">sign up</button></a></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Option</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center min-vh-100 bg-cover">
+            <div class="col-md-8 text-center">
+                <h1 id="logtit" class="header-title">Choose Your Reading Option</h1>
+                <div class="row">
+                    <!-- E-books Card -->
+                    <div class="col-md-6 mb-4 d-flex justify-content-center">
+                        <div class="card option-card shadow">
+                            <img src="../assets/original bag.jpeg" class="card-img-top" alt="E-books">
+                            <div class="card-body">
+                                <h3 class="card-title">E-books</h3>
+                                <p class="card-text">Explore a vast collection of digital books available at your fingertips. Convenient and portable.</p>
+                                <a href="../html/elib/eliblogin.html" class="btn btn-primary">Explore E-books</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Books Card -->
+                    <div class="col-md-6 mb-4 d-flex justify-content-center">
+                        <div class="card option-card shadow">
+                            <img src="../assets/cbook.jpg" class="card-img-top" alt="Books">
+                            <div class="card-body">
+                                <h3 class="card-title">Books</h3>
+                                <p class="card-text">Discover our extensive collection of physical books. Classic and contemporary reads await you.</p>
+                                <a href="homepage.html" class="btn btn-success">Explore Books</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <h6 class="messeage">Dont have a account ? <div class="signup messeage"><a href="../html/newsignup.html"><button type="button" class="btn btn-outline-info">sign
+            up</button></a></div></h6>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

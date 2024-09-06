@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Borrower Login</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    /* Top Navigation Bar */
+    .navBar {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      height: 50px;
+    }
+
+    .navBar .logo img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    /* Login Form Container */
+    .login_main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #72b7f3;
+    }
+
+    .login_form {
+      background-color: white;
+      padding: 30px 200px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login_form h1 {
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .login_form input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid #007bff;
+    }
+
+    .login_form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .login_form button:hover {
+      background-color: #218838;
+    }
+    body{
+      background-color: #72b7f3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="navBar">
+    <div class="logo">
+      <a href="../homepage.html">
+        <img src="../../assets/books.jpeg" alt="Book Logo">
+      </a>
+    </div>
+  </div>
+  
+  <!-- Login Form -->
+  <div class="login_main">
+    <div class="login_form">
+      <h1>User Login</h1>
+      <form action="borrowerOptions.html">
+        <label for="text">Enter ID:</label>
+        <input type="text" placeholder="Enter your card number..." required>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password..." required>
+        <button type="submit">login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

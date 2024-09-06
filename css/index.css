@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+html, body {
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background: #0d1831;
+  border: 1px solid #0d1831;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: #1c3266;
+}
+
+input, select {
+  background: #fafafa;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 17px;
+  font-family: Roboto;
+  font-weight: 300;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*always show the tick marks on right side*/
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+.container{
+  text-align: ;
+}
+.navBar .logo img {
+  height: 55px;
+  width: auto;
+  border-radius: 50%;
+}
+ body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background-color: #f8f9fa;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+ }
+
+ /* Top Navigation Bar */
+ .top-navbar {
+   background-color: #007bff;
+   color: white;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+ }
+
+ .top-navbar .logo img {
+   height: 50px;
+   border-radius: 50%;
+ }
+
+ .top-navbar .logout-btn {
+   background-color: #dc3545;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .top-navbar .logout-btn:hover {
+   background-color: #c82333;
+ }
+
+ /* Side Navigation Bar */
+ .side-navbar {
+   background-color: #343a40;
+   width: 250px;
+   height: calc(100vh - 60px);
+   /* Full height minus the top navbar height */
+   position: fixed;
+   top: 60px;
+   left: 0;
+   padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .side-navbar a {
+   color: white;
+   padding: 15px;
+   text-decoration: none;
+   display: block;
+   transition: background-color 0.3s;
+ }
+
+ .side-navbar a:hover {
+   background-color: #495057;
+ }
+
+ .side-navbar a.active {
+   background-color: #007bff;
+ }
+
+ /* Main Content Area */
+ .content {
+   margin-left: 250px;
+   margin-top: 75px;
+   /* Space for the fixed top navbar */
+   padding: 20px;
+   flex-grow: 1;
+   background-color: #e9ecef;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Table Styling */
+ .table-hover tbody tr:hover {
+   background-color: #f1f1f1;
+ }
+
+ .table_buttons a {
+   margin-right: 10px;
+   color: #007bff;
+ }
+
+ .table_buttons a:hover {
+   color: #007bff;
+ }
+
+ .table_buttons .material-icons {
+   vertical-align: middle;
+ }
+
+ /* Add Button Styling */
+ .addButton {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+ }
+
+ .addButton .material-icons {
+   margin-right: 5px;
+ }
+
+ .addButton:hover {
+   background-color: #0056b3;
+   }

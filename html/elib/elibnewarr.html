@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - E-Library</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/elibsty.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar-brand {
+            color: #007bff !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #007bff !important;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #ffffff !important;
+            background-color: #007bff !important;
+            border-radius: 0.25rem;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 400px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 20px 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        .footer a {
+            color: #007bff;
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/elibsty.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="elibhome.html">E-Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="elibhome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcatog.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibnewarr.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcontact.html">Contact</a>
+                </li>
+                <button type="button" class="btn btn-danger"><a  href="../gpthomepage.html">logout</a></button>
+            </ul>
+            <!-- Centered Search Bar -->
+            <div class="navbar-center">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- New Arrivals Banner -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">New Arrivals</h2>
+                <p class="text-center">Check out the latest books added to our collection.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Arrivals Books -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/newimg.jpg" class="card-img-top" alt="New Arrival 1">
+                    <div class="card-body">
+                        <h5 class="card-title">New Book Title 1</h5>
+                        <p class="card-text">Author Name</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/newimg2.jpg" class="card-img-top" alt="New Arrival 2">
+                    <div class="card-body">
+                        <h5 class="card-title">New Book Title 2</h5>
+                        <p class="card-text">Author Name</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/newimg3.jpg" class="card-img-top" alt="New Arrival 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Holes: The Reith Lectures</h5>
+                        <p class="card-text">Stephen Hawking </p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/newimg4.jpg" class="card-img-top" alt="New Arrival 4">
+                    <div class="card-body">
+                        <h5 class="card-title">American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer (Vintage)</h5>
+                        <p class="card-text">Author Name</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 E-Library. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

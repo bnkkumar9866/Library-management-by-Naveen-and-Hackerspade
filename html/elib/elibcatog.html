@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - E-Library</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar-brand {
+            color: #007bff !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #007bff !important;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            padding: auto;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 20px 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        .footer a {
+            color: #007bff;
+        }
+    </style>
+    <link rel="stylesheet" href="css/elibsty.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="elibhome.html">E-Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="elibhome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcatog.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibnewarr.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcontact.html">Contact</a>
+                </li>
+                <button type="button" class="btn btn-danger"><a  href="../gpthomepage.html">logout</a></button>
+            </ul>
+            <!-- Centered Search Bar -->
+            <div class="navbar-center">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Banner -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Category: Fiction</h2>
+                <p class="text-center">Explore our collection of Fiction books.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Books in Category -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/sfi1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Marvel Adventures: Super Heroes (2010-2012)</h5>
+                        <p class="card-text">paul tobbin</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/sfi2.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultimate Universe/Spider-Man</h5>
+                        <p class="card-text">zeb wells</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/sfi3.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Deadpool Kills the Marvel Universe</h5>
+                        <p class="card-text">cullen bunn</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/sfi4.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Marvel's The Avengers Prelude</h5>
+                        <p class="card-text">christofer yost</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 E-Library. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

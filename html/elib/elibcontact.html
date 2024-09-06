@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Library</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #3cb9f3;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar-brand {
+            color: #007bff !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #007bff !important;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #ffffff !important;
+            background-color: #007bff !important;
+            border-radius: 0.25rem;
+        }
+        .contact-section {
+            padding: 60px 0;
+        }
+        .contact-section h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-bottom: 40px;
+        }
+        .contact-info p {
+            margin: 0;
+        }
+        .form-control {
+            border-radius: 0.25rem;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .map-container {
+            height: 400px;
+            position: relative;
+        }
+        .map-container iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 20px 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        .footer a {
+            color: #007bff;
+        }
+        .footer a:hover {
+            color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="css/elibsty.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="elibhome.html">E-Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="elibhome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcatog.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibnewarr.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcontact.html">Contact</a>
+                </li>
+                <button type="button" class="btn btn-danger"><a  href="../gpthomepage.html">logout</a></button>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container contact-section">
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Address:</strong> 4-2333 Batlapalem,Amalpuram,Ambedkar konaseema District,Andra Pradesh,India</p>
+                    <p><strong>Phone:</strong> +91 987654321</p>
+                    <p><strong>Email:</strong> support@elibrary.com</p>
+                </div>
+                <div class="contact-form">
+                    <h4>Send Us a Message</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15297.620865031357!2d81.96210685541992!3d16.556098700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37e5921c016361%3A0x6b8b7865f613d84b!2sBVC%20INSTITUTE%20OF%20TECHNOLOGY%20%26%20SCIENCE!5e0!3m2!1sen!2sin!4v1724594261365!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 E-Library. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

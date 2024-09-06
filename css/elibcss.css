@@ -1,0 +1,51 @@
+body {
+    background: url('https://example.com/library-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 60px auto;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.login-container input {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.login-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-custom {
+    border-radius: 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.btn-custom:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+.login-container img {
+    width: 60%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}

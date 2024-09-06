@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top navigation bar */
+        .top-navbar {
+            background-color: #007bff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-navbar .logout-btn {
+            background-color: #dc3545;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .top-navbar .logout-btn:hover {
+            background-color: #c82333;
+        }
+
+        .top-navbar .logo img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        /* Side navigation bar */
+        .side-navbar {
+            background-color: #343a40;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 60px; /* Below the top navbar */
+            left: 0;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-navbar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .side-navbar a:hover {
+            background-color: #495057;
+        }
+
+        .side-navbar a.active {
+            background-color: #045bb8;
+        }
+
+        /* Main content area */
+        .content {
+            margin-left: 250px;
+            margin-top: 75px; /* Space for the fixed top navbar */
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top navigation bar -->
+<div class="top-navbar">
+    <div class="logo">
+        <a href="adminDash.html"><img src="../../assets/books.jpeg" alt="Library Logo"></a> <!-- Replace with your logo -->
+    </div>
+    <a href="../homepage.html" class="logout-btn">Logout</a>
+</div>
+
+<!-- Side navigation bar -->
+<div class="side-navbar">
+    <a class="nav-link" href="./adminBooks.html">All Books</a>
+    <a class="nav-link" href="./adminAuthors.html">All Authors</a>
+    <a class="nav-link" href="./adminPublishers.html">All Publishers</a>
+    <a class="nav-link" href="./adminBranches.html">All Branches</a>
+    <a class="nav-link" href="./adminBorrowers.html">All Borrowers</a>
+    <a class="nav-link" href="./adminDueDate.html">Change Due Date</a>
+</div>
+
+<!-- Main content area -->
+<div class="content">
+    <h1>Welcome to the Library Dashboard</h1>
+    <p>This is the main content area where you can manage your library.</p>
+</div>
+
+</body>
+</html>

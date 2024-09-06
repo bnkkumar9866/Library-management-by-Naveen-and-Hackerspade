@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Category</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            background-color: #007bff;
+            padding: 15px 10px;
+            height: 75px;
+        }
+
+        .navbar-brand img {
+            width: 65px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .borrower_checkbox {
+            text-align: center;
+            width: 50px;
+        }
+
+        /* Submit buttons */
+        .submit_bttns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .submit_bttns a {
+            text-decoration: none;
+            width: 48%;
+        }
+
+        .submit_bttns button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .submit_bttns .cancel {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .submit_bttns .cancel:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+
+        .submit_bttns .return {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .submit_bttns .return:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        /* Card container */
+        .card-container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-size: 18px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="borrowerOptions.html">
+            <img src="../../assets/books.jpeg" alt="Library Logo">
+        </a>
+        <a href="../homepage.html" class="logout-btn btn btn-danger">Logout</a>
+    </nav>
+     <!-- Category Selection Container -->
+     <div class="card-container">
+      <h2 class="text-center mb-4">Select a Category</h2>
+      <div class="row">
+          <!-- Category Card 1 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forcse.jpg" class="card-img-top" alt="Fiction">
+                  <div class="card-body">
+                      <h5 class="card-title">Computer Science</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse CSE</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Category Card 2 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forai.jpg" class="card-img-top" alt="Non-Fiction">
+                  <div class="card-body">
+                      <h5 class="card-title">Artificial Intelligence</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse AI</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Category Card 3 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forml.jpg" class="card-img-top" alt="Mystery">
+                  <div class="card-body">
+                      <h5 class="card-title">Machine Learning</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse ML</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Category Card 4 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forsciences.jpg" class="card-img-top" alt="Science Fiction">
+                  <div class="card-body">
+                      <h5 class="card-title">Science</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse Science</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Category Card 5 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forbiography.jpg" class="card-img-top" alt="Biography">
+                  <div class="card-body">
+                      <h5 class="card-title">Biography</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse Biography</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Category Card 6 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="../../assets/forhistory.jpg" class="card-img-top" alt="History">
+                  <div class="card-body">
+                      <h5 class="card-title">History</h5>
+                      <a href="checkoutBook.html" class="btn btn-primary">Browse History</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+     
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

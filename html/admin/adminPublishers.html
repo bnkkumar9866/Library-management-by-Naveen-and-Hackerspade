@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publishers Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .top-navbar {
+            background-color: #007bff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-navbar .logo img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .top-navbar .logout-btn {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .top-navbar .logout-btn:hover {
+            background-color: #c82333;
+        }
+
+        .side-navbar {
+            background-color: #343a40;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 60px; /* Below the top navbar */
+            left: 0;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            z-index: 900;
+        }
+
+        .side-navbar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .side-navbar a:hover,
+        .side-navbar a.active {
+            background-color: #495057;
+        }
+
+        .side-navbar a.active {
+            background-color: #007bff;
+        }
+
+        .content {
+            margin-left: 250px;
+            margin-top: 75px; /* Space for the fixed top navbar */
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .table-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .addButton {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .addButton .material-icons {
+            margin-right: 5px;
+        }
+
+        .addButton:hover {
+            background-color: #0056b3;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table_buttons a {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .table_buttons a:hover {
+            color: #0056b3;
+        }
+
+        .table_buttons .material-icons {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top navigation bar -->
+    <div class="top-navbar">
+        <div class="logo">
+            <a href="adminDash.html">
+                <img src="../../assets/books.jpeg" alt="Library Logo">
+            </a>
+        </div>
+        <a href="../homepage.html" class="logout-btn">Logout</a>
+    </div>
+
+    <!-- Side navigation bar -->
+    <div class="side-navbar">
+        <a class="nav-link" href="./adminBooks.html">All Books</a>
+        <a class="nav-link" href="./adminAuthors.html">All Authors</a>
+        <a class="nav-link active" href="./adminPublishers.html">All Publishers</a>
+        <a class="nav-link" href="./adminBranches.html">All Branches</a>
+        <a class="nav-link" href="./adminBorrowers.html">All Borrowers</a>
+        <a class="nav-link" href="./adminDueDate.html">Change Due Date</a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+        <div class="adminTable table-responsive">    
+            <div class="table-title">
+                <h3>Publishers</h3>
+                <a href="#">
+                    <button class="addButton">
+                        <i class="material-icons">add</i>
+                        Add New
+                    </button>
+                </a>
+            </div>
+            
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Publisher Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Donaldson</td>
+                        <td>Fake PubAddr0</td>
+                        <td>555-555-5550</td>
+                        <td class="table_buttons">
+                            <a class="edit" href="#" title="Edit Publisher">
+                                <i class="material-icons">edit</i>
+                            </a>
+                            <a class="delete" href="#" title="Delete Publisher">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>McGelon</td>
+                        <td>Fake PubAddr1</td>
+                        <td>555-555-5551</td>
+                        <td class="table_buttons">
+                            <a class="edit" href="#" title="Edit Publisher">
+                                <i class="material-icons">edit</i>
+                            </a>
+                            <a class="delete" href="#" title="Delete Publisher">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Penguin</td>
+                        <td>Fake PubAddr2</td>
+                        <td>555-555-5552</td>
+                        <td class="table_buttons">
+                            <a class="edit" href="#" title="Edit Publisher">
+                                <i class="material-icons">edit</i>
+                            </a>
+                            <a class="delete" href="#" title="Delete Publisher">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

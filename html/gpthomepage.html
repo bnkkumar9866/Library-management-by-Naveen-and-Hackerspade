@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/gif/png" href="../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/chathome.css">
+    <style>
+        #te {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .pagebo {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .homeaxi {
+            float: right;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            width: 400px;
+            height: auto;
+        }
+
+        #homeimg {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #img2 {
+            height: 400px;
+            width: auto;
+        }
+
+        .carousel-container {
+            height: 40%;
+            width: auto%;
+
+            /* Set the carousel to take up half the screen width */
+            margin: 0 auto;
+            /* Center the carousel */
+
+        }
+
+        .carousel-inner img {
+            height: 40%;
+            width: auto;
+
+        }
+
+        .carousel-caption h5 {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Add a semi-transparent background to the captions */
+            padding: 10px;
+        }
+
+        #te {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .pagebo {
+            margin-bottom: 30px;
+        }
+
+        .homeaxi {
+            max-width: 100%;
+            /* Make the images responsive */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .pagebo .text-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .t{
+            color:black;
+            te
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-2.5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="logo">
+                <a href="gpthomepage.html">
+                    <img src="../assets/books.jpeg" alt="book">
+                </a>
+            </div>
+            <div class="container">
+                <a class="navbar-brand" href="#">Library Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Contact</a>
+                        </li>
+                        <div class="signup"><a href="../html/newsignup.html"><button type="button"
+                                    class="btn btn-outline-info">Sign Up</button></a></div>
+                        <div class="login"><a href="conpage.html"><button type="button"
+                                    class="btn btn-outline-success">Login</button></a></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Auto-Sliding Carousel -->
+    <div class="carousel-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/image-1349x370.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Digital Library </h5>
+                        <b><p class="t">E-library contains crores of books for reading and referencing.</p></b>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/side1.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Library</h5>
+                        <b><p class="t">A very Advanced highly Facilitated, Well Structured,Central Ac ,Digital Process syterm.</p></b>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/slide3.jpg " class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>New Arrivals</h5>
+                        <b><p class="t">All were related to New Technologices.</p></b>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-white text-black text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to HackerSpace Library</h1>
+            <p class="lead">Discover a world of knowledge and information. Explore our diverse catalog, access a variety
+                of services, and get in touch with us for any assistance you may need.</p>
+            <p class="lead">An Online Library Management System (LMS) is a digital platform designed to manage and
+                streamline the operations of a library. It offers various features that enhance the efficiency of
+                library administration and improve the user experience for library patrons.</p>
+
+
+            <div id="te">
+                <!-- Content omitted for brevity -->
+            </div>
+            <p class="lead">Overall, an online library management system modernizes the way libraries operate, making it
+                easier for
+                both staff and patrons to interact with the library’s resources and services.</p>
+
+            <div id="te">
+                <h1>Key Components</h1>
+                <h4>Catalog Management:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Inventory Control: Maintains a comprehensive catalog of books, journals, digital
+                                resources, and other
+                                materials.</li>
+                            <li>Metadata Management: Stores detailed information about each item, including author,
+                                title, publication
+                                year, and genre.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg1.jpg" alt="">
+                    </div>
+                </div>
+                <h4>Circulation Management:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Check-In/Check-Out: Facilitates the borrowing and returning of library items.</li>
+                            <li>Due Dates and Renewals: Automatically tracks due dates and allows for renewals.</li>
+                            <li>Efficient Borrowing: The LMS streamlines the process of borrowing materials by
+                                automating the check-out procedure. Users
+                                can easily check out books, journals, or digital resources, and the system records the
+                                transaction in real-time.</li>
+                            <li>Self-Service Kiosks: Many modern LMS systems include support for self-service kiosks,
+                                allowing users to check out and
+                                return items independently, reducing wait times and freeing up staff for other tasks.
+                            </li>
+                            <li>Automatic Due Dates: When an item is checked out, the system automatically assigns a due
+                                date based on the library’s
+                                lending policies. This helps users know when items are due back and prevents accidental
+                                late returns.</li>
+                            <li>Late Fees: The system tracks overdue items and can automatically calculate and apply
+                                late fees, if applicable. This
+                                encourages timely returns and ensures that resources are available to other users.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg3.png" alt="">
+                    </div>
+                </div>
+                <h4>Reservation and Requests:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Book Reservations: Enables users to reserve books that are currently checked out.</li>
+                            <li>Interlibrary Loans: Manages requests for items from other libraries if they are not
+                                available in the
+                                local library.</li>
+                            <li>Hold Requests: Users can place a hold on books or other materials that are currently
+                                checked out. Once the item is
+                                returned, the system automatically notifies the user that it is available for pickup.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/bookreg.jpg" alt="">
+                    </div>
+                </div>
+                <h4>Search and Discovery:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Advanced Search: Provides search functionality to find items by title, author, ISBN, and
+                                other criteria.
+                            </li>
+                            <li>Recommendation Systems: Suggests items based on user preferences and borrowing history.
+                            </li>
+                            <li>Multi-Criteria Search: Users can search for materials using various criteria such as
+                                title, author, subject, publication
+                                date, ISBN, and keywords. This allows for precise and targeted searches, making it
+                                easier to find specific resources.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg5.jpg" alt="">
+                    </div>
+                </div>
+                <h4>Digital Resources Access:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>E-books and Journals: Provides access to digital content like e-books and online
+                                journals.</li>
+                            <li>Database Integration: Connects to various databases for research and reference
+                                materials.</li>
+                            <li>Digital Resource Access: Monitor the usage of digital resources such as e-books, online
+                                journals, and databases. This
+                                data is essential for determining which digital materials are most popular and valuable
+                                to users.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg6.png" alt="">
+                    </div>
+                </div>
+                <h4>Reporting and Analytics:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Usage Statistics: Generates reports on library usage, including the number of books
+                                borrowed and user
+                                activity.</li>
+                            <li>Inventory Reports: Tracks the status of library materials, including lost or damaged
+                                items.</li>
+                            <li>Borrowing Trends: Track the borrowing and return patterns of library materials. Identify
+                                popular books, journals, and
+                                digital resources, helping the library manage its inventory more effectively.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg7.webp" alt="">
+                    </div>
+                </div>
+                <h4>Communication and Alerts:</h4>
+                <div class="row pagebo">
+                    <div class="col-md-8 text-content">
+                        <ul>
+                            <li>Notifications: Sends reminders for overdue items, upcoming due dates, and new arrivals.
+                            </li>
+                            <li>Feedback Mechanisms: Allows users to provide feedback or report issues.</li>
+                            <li>Due Date Reminders: Patrons receive automatic reminders about approaching due dates for
+                                borrowed items. This reduces the
+                                likelihood of overdue fines and helps manage the circulation of materials efficiently.
+                            </li>
+                            <li>Overdue Notices: Alerts are sent when an item is overdue, reminding users to return or
+                                renew the item.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="homeaxi" src="../assets/homeimg8.png" alt="">
+                    </div>
+                </div>
+                <h1>Benefits</h1>
+                <ul>
+                    <li>Efficiency: Automates routine tasks such as cataloging, circulation, and user management,
+                        reducing manual work
+                        and errors.</li>
+                    <li>Accessibility: Provides remote access to the library’s catalog and digital resources, allowing
+                        users to browse
+                        and borrow items from anywhere.</li>
+                    <li>Enhanced User Experience: Offers a user-friendly interface for searching, reserving, and
+                        managing library
+                        materials.</li>
+                    <li>Improved Resource Management: Helps librarians manage inventory, track usage, and generate
+                        reports to make
+                        informed decisions.</li>
+                    <li>Scalability: Accommodates a growing number of users and materials, adapting to the expanding
+                        needs of the
+                        library.</li>
+                </ul>
+            </div>
+            <p>Overall, an online library management system modernizes the way libraries operate, making it easier for
+                both staff
+                and patrons to interact with the library’s resources and services.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 HackerSpace Library Management System. All rights reserved.</p>
+            <p> Batlapalem, Amalpuram, konaseema, AP 533221</p>
+            <p><a href="privacy.html" class="text-light">Privacy Policy</a> | <a href="terms.html"
+                    class="text-light">Terms
+                    of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.carousel-item img').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                switch (index) {
+                    case 0:
+                        window.location.href = 'elib/eliblogin.html'; // Replace with actual URL
+                        break;
+                    case 1:
+                        window.location.href = 'homepage.html'; // Replace with actual URL
+                        break;
+                    case 2:
+                        window.location.href = 'newarrival.html'; // Replace with actual URL
+                        break;
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

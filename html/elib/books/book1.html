@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View E-Book - E-Library</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="../css/elibsty.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar-brand {
+            color: #007bff !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #007bff !important;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #ffffff !important;
+            background-color: #007bff !important;
+            border-radius: 0.25rem;
+        }
+        .ebook-viewer {
+            height: 80vh;
+            width: 100%;
+            border: none;
+        }
+        .footer {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 20px 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        .footer a {
+            color: #007bff;
+        }
+        .footer a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">E-Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../elibhome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../elibcatog.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../new-arrivals.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+                <button type="button" class="btn btn-danger"><a  href="../gpthomepage.html">logout</a></button>
+            </ul>
+            <!-- Centered Search Bar -->
+            <div class="navbar-center">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- E-Book Viewer -->
+    <div class="container my-5">
+        <h2>View E-Book</h2>
+        <iframe class="ebook-viewer" src="../photos/pg4793-h/pg4793-images.html" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 E-Library. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

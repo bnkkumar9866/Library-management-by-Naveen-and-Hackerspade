@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif/png" href="../../assets/headlogo2.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Library</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/elibsty.css">
+    <!-- Custom CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="elibhome.html">E-Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="elibhome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcatog.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibnewarr.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elibcontact.html">Contact</a>
+                </li>
+                <button type="button" class="btn btn-danger"><a  href="../gpthomepage.html">logout</a></button>
+            </ul>
+            <!-- Centered Search Bar -->
+            <div class="navbar-center">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Welcome to E-Library</h1>
+            <p>Your gateway to a world of knowledge and learning.</p>
+            <a href="elibcatog.html" class="btn btn-primary">Explore Categories</a>
+        </div>
+    </div>
+
+     <!-- Search Bar -->
+     <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for books, authors, genres...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Books -->
+    <div class="container my-4">
+        <h3 class="text-center">Featured Books</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/book1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                        <p class="card-text">J.K.Rowling</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/book2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the Deathly Hallows</h5>
+                        <p class="card-text">J.K.Rowling</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/book3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the Cursed Child - Parts One and Two</h5>
+                        <p class="card-text">J.K.Rowling</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="photos/book4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the Chamber of Secrets</h5>
+                        <p class="card-text">J.K.Rowling</p>
+                        <a href="books/book1.html" class="btn btn-primary">Read Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="container my-4">
+        <h3 class="text-center">Browse by Categories</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="photos/fiction.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fiction</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="photos/nonfiction.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Non-Fiction</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="photos/scientific.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Science</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 E-Library. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
